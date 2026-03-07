@@ -99,7 +99,7 @@ void replaceToken(Map<string, Vector<string> >& grammar) {
                 string token = sentence.substr(start, end - start + 1);
                 if (!grammar.containsKey(token) || grammar[token].isEmpty()) continue;
                 sentence = sentence.substr(0, start) + grammar[token][randomInteger(0, grammar[token].size() - 1)]
-                           + sentence.substr(end + 1, sentence.length() - end); // 字符串拼接替换token不是最优解，最优的是先逆序压栈再通过出栈时变量替换
+                           + sentence.substr(end + 1, sentence.length() - end); // 字符串find token再substr不是最优解（两者最坏都O(n）），最优的是先逆序压栈再通过出栈时再字符串+字符拼接（重点不是拼接）
 
                 if (sentence.find('<') != string::npos) {
                     hasToken = true;
