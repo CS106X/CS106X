@@ -112,7 +112,9 @@ bool canBeMadeDisasterReady(const Map<string, Set<string>>& roadNetwork,
     if (locations.size() > numCities) return false;
     for (string city : locations) {
         for (string neighbor : roadNetwork[city]) {
-            if (locations.contains(neigh))
+            if (!locations.contains(neighbor)) {
+                return false;
+            }
         }
     }
     
