@@ -29,7 +29,7 @@ namespace {
         while (true) {
             string filename = getLine(prompt);
             // figure out correct absolute path to the dictionary, so the demo can run correctly
-            string relativePath = directory + "/res/" + filename;
+            string relativePath = "res/" + directory + "/" + filename;
             QDir dir(QCoreApplication::applicationDirPath());
             QString absolute_project_file_path = dir.absolutePath();
             string absPath = absolute_project_file_path.toLatin1().data();

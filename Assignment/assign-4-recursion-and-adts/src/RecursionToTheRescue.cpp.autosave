@@ -101,16 +101,22 @@ bool canAllPatientsBeSeen(const Vector<Doctor>& doctors,
  * bidirectional: if there's a road from City A to City B, then there's a road from City B back to
  * City A as well.
  *
- * @param roadNetwork The underlying transportation network.
+ * @param roadNetwork The underlying transportation network. 自身：邻居
  * @param numCities   How many cities you can afford to put supplies in.
- * @param locations   An outparameter filled in with which cities to choose if a solution exists.
+ * @param locations   An outparameter filled in with which cities to choose if a solution exists. 即chosen。
  * @return Whether a solution exists.
  */
 bool canBeMadeDisasterReady(const Map<string, Set<string>>& roadNetwork,
                             int numCities,
                             Set<string>& locations) {
-    // [TODO: Delete these lines and implement this function!]
-    (void)(roadNetwork, numCities, locations);
+    if (locations.size() > numCities) return false;
+    for (string city : locations) {
+        for (string neighbor : roadNetwork[city]) {
+            if (locations.contains(neigh))
+        }
+    }
+    
+
     return false;
 }
 
