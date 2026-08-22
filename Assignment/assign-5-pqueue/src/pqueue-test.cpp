@@ -109,7 +109,7 @@ static void sortedTest(PQueue::PQueueType pqtype, const Lexicon& english, int si
  */
 static void scrambleTest(PQueue::PQueueType pqtype, const Lexicon& english, int size) {
     HashSet<string> set;
-    for (const string& word: english) set.insert(word);
+    for (const string& word: english) set.add(word);
     Vector<string> inserted;
     PQueue *pq = buildPQueue(pqtype, set, size, inserted);
     extractElements(pqtype, pq, inserted);
@@ -157,7 +157,7 @@ static void mergeTest(PQueue::PQueueType pqtype, const Lexicon& english, int siz
     HashSet<string> set;
     int count = 0;
     for (const string& word: english) {
-        set.insert(word);
+        set.add(word);
         count++;
         if (count == size) break;
     }
@@ -212,7 +212,7 @@ static const struct {
  * Runs all of the various tests against each of the four subclasses.
  */
 static void runAllTests() {
-    Lexicon english("dictionary.txt");
+    Lexicon english("res/dictionary.txt");
     for (unsigned long i = 0; i < sizeof(testParameters)/sizeof(*testParameters); i++) {
         cout << "Exercising the " << PQueue::typeToName(testParameters[i].type) << endl;
         cout << "---------------" << string(PQueue::typeToName(testParameters[i].type).size(), '-') << endl;

@@ -1,6 +1,7 @@
 #pragma once
 #include "pqueue.h"
 #include <string>
+#include "vector.h"
 
 class VectorPQueue : public PQueue {
 public:
@@ -16,4 +17,5 @@ public:
 private:
 	// provide data methods and helper methods to
     // help realize the Vector-backed PQueue
+    Vector<std::string> vec;
 };
