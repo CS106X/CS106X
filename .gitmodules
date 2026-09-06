@@ -1,0 +1,4 @@
+[submodule "Assignment/assign-5-pqueue"]
+	path = Assignment/assign-5-pqueue
+	url = git@github.com:CS106X/PQueue.git
+	branch = main
