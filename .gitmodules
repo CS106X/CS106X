@@ -2,3 +2,7 @@
 	path = Assignment/assign-5-pqueue
 	url = git@github.com:CS106X/PQueue.git
 	branch = main
+[submodule "Assignment/assign-7-stanford-123"]
+	path = Assignment/assign-7-stanford-123
+	url = git@github.com:CS106X/Stanford-123.git
+	branch = main
