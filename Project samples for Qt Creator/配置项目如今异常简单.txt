@@ -1,0 +1,9 @@
+https://web.stanford.edu/dept/cs_edu/resources/qt/install-windows
+
+版本总更新，亦步亦趋跟着他下载就好了。（Qt配置好网络环境正常3分钟就能下载完！）
+
+不过注意路径不要有空格和符号。
+
+做作业的build可以自己探索，也可以看答案https://n0eb0mluamf.feishu.cn/wiki/JweAwz96FixT0mkD0FicrY1unKg
+
+另外，run CS106出现时断时续的rmexisting错误，便是成功的标志。——其他项目不会出现。
