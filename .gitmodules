@@ -6,3 +6,7 @@
 	path = Assignment/assign-7-stanford-123
 	url = git@github.com:CS106X/Stanford-123.git
 	branch = main
+[submodule "Assignment/assign-6-huffman"]
+	path = Assignment/assign-6-huffman
+	url = git@github.com:CS106X/Huffman.git
+	branch = main
